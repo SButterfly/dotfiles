@@ -1,0 +1,2 @@
+# Export jsc to path
+export PATH=$PATH:/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/

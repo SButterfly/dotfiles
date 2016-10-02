@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Use oh-my-zsh instead of bash
+
 install_zsh () {
   # Test to see if zshell is installed.  If it is:
   if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
@@ -42,7 +44,6 @@ cp ${dir}/sbutterfly.zsh-theme ~/.oh-my-zsh/themes
 echo "Copied theme file to ~/.oh-my-zsh/themes/sbutterfly.zsh-theme"
 
 # Append to .zchrc line to run our script
-INIT_FILE="${HOME}/.myrc"
 ZCH_FILE="${HOME}/.zshrc"
 line="source $INIT_FILE"
 grep -q -F "$line" $ZCH_FILE || echo "$line" >> $ZCH_FILE

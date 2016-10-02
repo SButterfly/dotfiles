@@ -1,0 +1,2 @@
+# Export ant to path
+export PATH=$PATH:/Users/s-ermakov/apache-ant-1.9.7/bin
