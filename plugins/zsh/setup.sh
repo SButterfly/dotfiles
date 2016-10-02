@@ -44,9 +44,9 @@ echo "Copied theme file to ~/.oh-my-zsh/themes/sbutterfly.zsh-theme"
 # Append to .zchrc line to run our script
 INIT_FILE="${HOME}/.myrc"
 ZCH_FILE="${HOME}/.zshrc"
-line="export $INIT_FILE"
+line="source $INIT_FILE"
 grep -q -F "$line" $ZCH_FILE || echo "$line" >> $ZCH_FILE
 echo "Appended '$line' to '$ZCH_FILE'"
 
-cat zsh_init >> $INIT_FILE 
+cat $dir/zsh_init >> $INIT_FILE 
 echo "Appended 'zsh_init' to '$INIT_FILE'"
