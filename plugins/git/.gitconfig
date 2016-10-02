@@ -1,0 +1,44 @@
+[core]
+   excludesfile = ~/.gitignore
+   editor = vim 
+   preloadindex = true
+[alias]
+  lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lgga = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lb = log --all --graph --decorate --oneline --simplify-by-decoration
+  ls = ls-files
+  cp = cherry-pick
+  unstash = stash pop
+
+  head = !git lgg | head
+  ld = !git lola | head -n 40
+  spull = !git-svn fetch && git-svn rebase
+  spush = !git-svn dcommit -e
+  [color]
+    ui = auto
+  [color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+  [color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+  [color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[diff]
+   tool = meld
+[difftool]
+   prompt = false
