@@ -1,11 +1,18 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Copy .gitconfig to home
-cp ${DIR}/.gitconfig ~/.gitconfig
+cp $dir/.gitconfig ~/.gitconfig
 echo "Copied .gitconfig to ~/.gitconfig"
 
+# Copy .gitignore_global to home
+cp $dir/.gitignore_global ${HOME}/.gitignore_global
+echo "Copied .gitignore_global to ${HOME}/.gitignore_global"
+
 # Set up credentials
-sh ${DIR}/set_credentials.sh
+sh $dir/set_credentials.sh
 echo "Set up credentials"
 
+# Set up global gitignore
+git config --global core.excludesfile ${HOME}/.gitignore_global
+echo "Set up global gitignore file"

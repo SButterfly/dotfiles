@@ -1,0 +1,37 @@
+*~
+.DS_Store
+
+.project
+
+# Idea files
+*.iws
+*.ipr
+*.iml
+.idea
+*/.idea
+
+#ignore build files
+*/build
+*/*/build
+#*/bin
+*/*/out
+*/bin-tests
+*/bin/test
+*/bin-test
+*/debhelper.log
+*/debian/debhelper.log
+*/debian/files
+*/debian/substvars
+*/debian/tmp
+
+idl2java.cache
+
+# packages
+yandex-*.deb
+yandex-*.tar.gz
+yandex-*.build
+yandex-*.changes
+yandex-*.dsc
+yandex-*.upload
+
+#WEB-INF/
