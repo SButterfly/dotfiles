@@ -1,7 +1,8 @@
 [core]
-   excludesfile = ~/.gitignore
-   editor = vim 
-   preloadindex = true
+  excludesfile = ~/.gitignore_global
+  editor = vim 
+  preloadindex = true
+  autocrlf = input
 [alias]
   lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lgga = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
@@ -41,4 +42,6 @@
 [diff]
    tool = meld
 [difftool]
-   prompt = false
+  prompt = false
+[push]
+  default = simple
