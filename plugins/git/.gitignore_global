@@ -35,3 +35,4 @@ yandex-*.dsc
 yandex-*.upload
 
 #WEB-INF/
+*/.gradle
