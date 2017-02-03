@@ -19,7 +19,6 @@ echo
 # Plugins to run
 declare -a PLUGINS=(
 	'git'
-	'ant'
 	'java'
 	'javascript'
 	'sublime'
