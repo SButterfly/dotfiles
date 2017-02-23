@@ -46,4 +46,4 @@
 [push]
   default = simple
 [help]
-        autocorrect = 20
+    autocorrect = 20

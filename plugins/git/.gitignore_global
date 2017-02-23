@@ -26,13 +26,5 @@
 
 idl2java.cache
 
-# packages
-yandex-*.deb
-yandex-*.tar.gz
-yandex-*.build
-yandex-*.changes
-yandex-*.dsc
-yandex-*.upload
-
 #WEB-INF/
 */.gradle
