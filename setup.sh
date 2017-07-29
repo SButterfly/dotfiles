@@ -23,6 +23,7 @@ declare -a PLUGINS=(
 	'javascript'
 	'sublime'
 	'gradle'
+	'editorconfig'
 )
 for i in ${PLUGINS[@]}; do
 	path="$dir/plugins/$i"
