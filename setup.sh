@@ -19,8 +19,6 @@ echo
 # Plugins to run
 declare -a PLUGINS=(
 	'git'
-	'java'
-	'javascript'
 	'sublime'
 	'gradle'
 	'editorconfig'
